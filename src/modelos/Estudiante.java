@@ -2,15 +2,10 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Estudiante{
+public class Estudiante extends Persona{
     //Informacion del estudiante
     public String matricula;
-    public String nombre;
-    public String apellido;
     public String facultad;
-    public int edad;
-    public String direccion;
-    public String telefono;
     public ArrayList<Paralelo> paralelos;
     
     //Getter y setter de Matricula

@@ -2,32 +2,19 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Ayudante {
+public class Ayudante extends Estudiante {
     protected Estudiante est;
     public ArrayList<Paralelo> paralelos;
 
     Ayudante(Estudiante e){
-    	est = e;
-    }
-    public String getMatricula() {
-        return est.getMatricula();
+    	est= e;
     }
 
-    public void setMatricula(String matricula) {
-        est.setMatricula(matricula);
-    }
+    //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos
 
-   
-    public String getNombre() {
-        return est.getNombre();
-    }
 
-    public String getApellido() {
-        return est.getApellido();
-    }
-
-    
-    public void imprimirParaleloAyudante(){
+    //Método para imprimir los paralelos que tiene asignados como ayudante
+    public void MostrarParalelos(){
         for(Paralelo par:paralelos){
             //Muestra la info general de cada paralelo
         }
