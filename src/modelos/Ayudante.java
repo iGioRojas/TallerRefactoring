@@ -3,12 +3,12 @@ package modelos;
 import java.util.ArrayList;
 
 public class Ayudante extends Estudiante {
-    protected Estudiante est;
+    
     private ArrayList<Paralelo> paralelosAyudante;
 
-    public Ayudante(Estudiante est) {
-        super(est.matricula, est.nombre, est.getApellido(), est.getEdad(), est.getDireccion(), est.getTelefono(), est.getFacultad());
-        this.est = est;
+    public Ayudante(String matricula, String nombre, String apellido, int edad, Direccion direccion, Telefono telefono, String facultad) {
+        super(matricula,nombre, apellido, edad, direccion, telefono, facultad);
+
         this.paralelosAyudante = new ArrayList<>();
     }
     //Los paralelos se añaden/eliminan directamente del Arraylist de paralelos
