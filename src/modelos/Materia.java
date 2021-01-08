@@ -1,20 +1,17 @@
 package modelos;
 
 public class Materia {
-    public String codigo;
-    public String nombre;
-    public String facultad;
-    public double notaInicial;
-    public double notaFinal;
-    public double notaTotal;
+    private String codigo;
+    private String nombre;
+    private String facultad;
+    private double notaInicial;
+    private double notaFinal;
+    private double notaTotal;
 
-    public Materia(String codigo, String nombre, String facultad, double notaInicial, double notaFinal, double notaTotal) {
+    public Materia(String codigo, String nombre, String facultad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.facultad = facultad;
-        this.notaInicial = notaInicial;
-        this.notaFinal = notaFinal;
-        this.notaTotal = notaTotal;
     }
 
     public String getCodigo() {
@@ -64,13 +61,6 @@ public class Materia {
     public void setNotaTotal(double notaTotal) {
         this.notaTotal = notaTotal;
     }
-   
-    
-    
-    
-    
-    
-    
 }
 
 
